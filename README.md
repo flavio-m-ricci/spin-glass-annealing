@@ -38,12 +38,14 @@ These are observations from the studied runs, not a general ranking of the metho
 
 For the SK extension, no exact ground-state reference is available in this project. The plotted minimum is the lowest energy found during a run, not a certified ground state. Agreement with a sampling reference distribution also does not by itself establish equilibration.
 
+
 ## Repository contents
 
 | File | Description |
 | --- | --- |
 | `annealing.ipynb` | Main notebook containing the algorithm implementations, experiments, plots and discussion. |
 | `plot.py` | Plotting functions imported by the notebook. |
+| `requirements.txt` | Python dependencies required to run the notebook and reproduce the computational experiments. |
 | `slides/presentation.pptx` | Presentation of the scientific background, methods and results. |
 | `references.bib` | Bibliographic entry for the reference paper. |
 
@@ -54,6 +56,10 @@ The notebook and `plot.py` are located in the repository root. Benchmark data ar
 The recorded runs used **Python 3.12.13**, **PyTorch 2.11.0+cu128** and an **NVIDIA Tesla T4 GPU**. Versions of the other dependencies were not recorded.
 
 The code uses **PyTorch**, **NumPy**, **pandas** and **Matplotlib**. A local interactive run also needs a Jupyter notebook environment. A GPU is recommended for the recorded population sizes; CPU execution may take substantially longer.
+
+```bash
+python -m pip install -r requirements.txt
+```
 
 1. Place the notebook and `plot.py` in the same directory.
 2. Install the dependencies in your chosen Python environment, selecting a PyTorch build appropriate for your hardware.
