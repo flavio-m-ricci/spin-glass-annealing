@@ -1,0 +1,11 @@
+# Spin Glass Annealing - Python dependencies
+# Developed using Python 3.12.13.
+# PyTorch CUDA builds may require installation from the official PyTorch index.
+
+numpy
+pandas
+matplotlib
+torch
+
+# Needed to open and run annealing.ipynb locally (not needed on Google Colab).
+jupyterlab
